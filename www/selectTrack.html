@@ -1,0 +1,35 @@
+<div ng-controller="SelectTrackCtrl">
+
+
+    <a ng-class="{disabled: weekNumber<1}" class="btn btn-default" href="/#/selectTrack/{{ selectedSeries.id }}/{{weekNumber}}">prev page</a>
+    <a ng-class="{disabled: weekNumber>10}" class="btn btn-default" href="/#/selectTrack/{{ selectedSeries.id }}/{{weekNumber+2}}">next page</a>
+
+    Search:<input ng-model="query" type="text"/>
+    <div class="list-group">
+
+        <li class="list-group-item">
+            <b>{{ selectedSeries.name }}</b>
+        </li>
+        <li class="list-group-item">
+            <b>Select a track for Week {{ weekNumber + 1 }}</b>
+        </li>
+
+
+        <div ng-repeat="track in tracks | filter:query">
+            <li class="list-group-item">
+
+                <div ng-show="track.id == selectedSeries.trackIds[weekNumber]">
+                    <b>selected {{ track.name }}</b>
+                </div>
+
+                <div ng-show="track.id != selectedSeries.trackIds[weekNumber]">
+                    <a ng-click="selectTrack(track.id)">select</a> {{ track.name }}
+                </div>
+
+
+            </li>
+
+        </div>
+
+    </div>
+</div>

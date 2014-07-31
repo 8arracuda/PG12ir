@@ -1,0 +1,24 @@
+<div ng-controller="EditSeriesListCtrl" xmlns="http://www.w3.org/1999/html">
+
+
+
+    <a ng-click="addSeries()" class="btn btn-primary">add new Series</a>
+    <a ng-click="saveSeries()" class="btn btn-primary">save Series</a>
+    <a ng-click="initSeries()" class="btn btn-primary">init Series</a>
+
+    <form name="myForm">
+        <div class="list-group">
+            <li class="list-group-item">
+                <b>Select series to edit (showing {{ series.length }})</b>
+            </li>
+
+
+
+            <li ng-repeat="s in series"
+                class="list-group-item">
+                <a href="#/editSeries/{{ s.id }}">{{s.name}}  -- {{ s.id }} --</a>
+                <a ng-click="alertString(s.id)">alertString</a>
+            </li>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,20 @@
+<div ng-controller="EditSeriesDetailCtrl">
+
+
+    <a class="btn btn-primary" ng-click="loadSeasonsFromWeb()">load Seasons From Web</a>
+    <a class="btn btn-primary" ng-click="seasonsStringify()">seasonsStringify</a>
+    <a class="btn btn-primary" ng-click="justAlert()">justAlert</a>
+
+
+    <div class="list-group">
+        <li class="list-group-item">
+            <b>Seasons</b>
+        </li>
+
+        <li ng-repeat="s in seasons"
+            class="list-group-item">
+            {{s.name}}
+        </li>
+    </div>
+
+</div>

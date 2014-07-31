@@ -1,0 +1,46 @@
+<div ng-controller="VehiclesListCtrl" xmlns="http://www.w3.org/1999/html">
+
+
+
+    <div class="scrollable">
+        <div class="scrollable-content">
+
+            <a class="btn btn-primary" ng-click="saveVehicles()"><span class="glyphicon glyphicon-floppy-disk"></span>
+                save vehicles</a><br>
+            <a class="btn btn-primary" ng-click="updateVehiclesFromJSON()"><span
+                    class="glyphicon glyphicon-refresh"></span> updates vehicles from json</a><br>
+
+            Search:<input ng-model="query" type="text"/>
+
+            <form name="myForm">
+                <div class="list-group">
+                    <li class="list-group-item">
+                        <b>Select your vehicles</b>
+                    </li>
+
+                    <label ng-repeat="vehicle in vehicles | filter:query"
+                           class="list-group-item">
+                        <input ng-show="vehiclesDefault.indexOf(vehicle.id) == -1"
+                               type="checkbox"
+                               name="selectedVehicles[]"
+                               value="{{vehicles.name}}"
+                               ng-model="vehicle.owned"
+                                >
+                        <input ng-show="vehiclesDefault.indexOf(vehicle.id) != -1"
+                               type="checkbox"
+                               name="selectedVehicles[]"
+                               value="{{vehicles.name}}"
+                               checked="true"
+                               disabled
+                                >
+
+                        {{vehicle.name}}
+                    </label>
+
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+</div>

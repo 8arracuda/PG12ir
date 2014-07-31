@@ -1,0 +1,37 @@
+<div ng-controller="EditSeriesDetailCtrl">
+
+
+
+
+
+    <div class="list-group">
+        <li class="list-group-item">
+            <a href="#/selectVehicles/{{ selectedSeries.id }}">select vehicles</a>
+        </li>
+        <li class="list-group-item">
+            <b>Series name:</b><br>
+            <input ng-model="selectedSeries.name" type="text"/>
+        </li>
+        <div ng-repeat="weekNumber in [1,2,3,4,5,6,7,8,9,10,11,12]">
+
+            <li class="list-group-item">
+                Week {{ weekNumber }}: <a href="#/selectTrack/{{ selectedSeries.id }}/{{ weekNumber }}">{{
+                    trackNames[weekNumber-1] }}</a>
+            </li>
+        </div>
+
+        <!--<div ng-repeat="weekNumber in [1,2,3,4,5,6,7,8,9,10,11,12]">-->
+        <!--<b>Week {{ weekNumber }} : (track id: {{ selectedSeries.trackIds[1] }})</b>-->
+
+        <!--<div ng-repeat="track in tracks">-->
+        <!--<div ng-show="track.id == selectedSeries.trackIds[weekNumber]">-->
+        <!--<b>{{ track.name }}</b>-->
+        <!--</div>-->
+        <!--<div ng-show="track.id != selectedSeries.trackIds[weekNumber]">-->
+        <!--{{ track.name }}-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+
+    </div>
+</div>

@@ -1,0 +1,43 @@
+<div ng-controller="TracksListCtrl" xmlns="http://www.w3.org/1999/html">
+    <div class="scrollable">
+        <div class="scrollable-content">
+
+
+            <a ng-click="saveTracks()" class="btn btn-primary">
+                save Tracks
+            </a>
+
+            <a ng-click="loadTracksFromLocalStorage()" class="btn btn-primary">
+                load from localStorage
+            </a>
+
+            <a ng-click="loadDefaultsForTrack()" class="btn btn-primary">
+                load defaults
+            </a>
+
+            <a ng-click="removeTracksFromLocalStorage()" class="btn btn-primary">
+                remove tracks from LocalStorage
+            </a>
+
+
+            <form name="myForm">
+                <div class="list-group">
+                    <li class="list-group-item">
+                        <b>Select your tracks ({{ ownedTracksInSeriesCount() }} of {{ tracks.length }} selected)</b>
+                    </li>
+
+                    <label ng-repeat="track in tracks"
+                           class="list-group-item">
+                        <input
+                                type="checkbox"
+                                name="selectedTracks[]"
+                                value="{{track.name}}"
+                                ng-model="track.owned"
+                                > {{track.name}}
+                    </label>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

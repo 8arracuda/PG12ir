@@ -1,0 +1,44 @@
+<div ng-controller="SeriesDetailCtrl">
+
+
+
+    <a ng-click="setAsFavorite()"
+       ng-show="selectedSeries.isFavorite==false"
+       class="btn bg-primary"><span class="glyphicon glyphicon-star"></span> add as favorite</a>
+
+    <a ng-click="removeFavorite()"
+       ng-show="selectedSeries.isFavorite==true"
+       class="btn bg-primary"><span class="glyphicon glyphicon-star-empty"></span> remove favorite</a>
+
+
+
+    <div class="list-group">
+
+        <li class="list-group-item">
+            <b>{{ selectedSeries.name }}</b>
+        </li>
+        <li class="list-group-item">
+            You have {{ ownedTracksInSeriesCount() }} of {{ trackOwned.length }} tracks in this season.
+        </li>
+        <li class="list-group-item"
+            ng-repeat="t in selectedSeries.trackIds track by $index"
+            ng-class="{'list-group-item-danger': trackOwned[$index] == false}">
+
+            <div ng-switch on="trackCompleted[$index]">
+                <div ng-switch-when="true">
+                    <a ng-click="changeToNotCompleted($index)" href=""><img src="img/finished2.png" width="50px"></a>
+                </div>
+                <div ng-switch-when="false">
+                    <a ng-click="changeToCompleted($index)" href=""><img src="img/notFinished2.png" width="50px"></a>
+                </div>
+            </div>
+
+
+            <b>Week {{$index+1}}</b>: {{ trackNames[$index] }}
+
+        </li>
+
+    </div>
+
+
+</div>

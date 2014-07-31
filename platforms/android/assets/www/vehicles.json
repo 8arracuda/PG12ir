@@ -1,0 +1,158 @@
+[
+            {
+                "id": 1,
+                "name": "BMW Z4 GT3"
+            },
+            {
+                "id": 2,
+                "name": "Cadillac CTS-V Racecar"
+            },
+            {
+                "id": 3,
+                "name": "Chevrolet Corvette C6.R"
+            },
+            {
+                "id": 4,
+                "name": "Chevrolet Impala Class B"
+            },
+            {
+                "id": 5,
+                "name": "Chevrolet Impala-COT"
+            },
+            {
+                "id": 6,
+                "name": "Chevrolet Monte-Carlo SS"
+            },
+            {
+                "id": 7,
+                "name": "Chevrolet National Impala"
+            },
+            {
+                "id": 8,
+                "name": "Chevrolet Silverado"
+            },
+            {
+                "id": 9,
+                "name": "Chevrolet SS-Gen6"
+            },
+            {
+                "id": 10,
+                "name": "Dallara DW12"
+            },
+            {
+                "id": 11,
+                "name": "Dallara Indycar"
+            },
+            {
+                "id": 12,
+                "name": "Ford Fusion Gen6"
+            },
+            {
+                "id": 13,
+                "name": "Ford GT3"
+            },
+            {
+                "id": 14,
+                "name": "Ford Mustang Class B"
+            },
+            {
+                "id": 15,
+                "name": "Ford Mustang FR500S"
+            },
+            {
+                "id": 16,
+                "name": "Ford V8 Supercar"
+            },
+            {
+                "id": 17,
+                "name": "HPD ARX-01C"
+            },
+            {
+                "id": 18,
+                "name": "KIA Optima"
+            },
+            {
+                "id": 19,
+                "name": "Legends Ford 34 Coupe"
+            },
+            {
+                "id": 20,
+                "name": "Lotus 49"
+            },
+            {
+                "id": 21,
+                "name": "Lotus 79"
+            },
+            {
+                "id": 22,
+                "name": "Mazda MX5"
+            },
+            {
+                "id": 23,
+                "name": "McLaren MP4-12C GT3"
+            },
+            {
+                "id": 24,
+                "name": "Pontiac Solstice"
+            },
+            {
+                "id": 25,
+                "name": "Radical SR8"
+            },
+            {
+                "id": 26,
+                "name": "Riley Prototype"
+            },
+            {
+                "id": 27,
+                "name": "Ruf RT 12R AWD"
+            },
+            {
+                "id": 28,
+                "name": "SCAA Spec Racer Ford"
+            },
+            {
+                "id": 29,
+                "name": "Silver Crown"
+            },
+            {
+                "id": 30,
+                "name": "SK Modified"
+            },
+            {
+                "id": 31,
+                "name": "SK Tour Modified"
+            },
+            {
+                "id": 32,
+                "name": "Skip Barber  Formula 2000"
+            },
+            {
+                "id": 33,
+                "name": "Sprint Car"
+            },
+            {
+                "id": 34,
+                "name": "Star Mazda"
+            },
+            {
+                "id": 35,
+                "name": "Street Stock"
+            },
+            {
+                "id": 36,
+                "name": "Super Late Model"
+            },
+            {
+                "id": 37,
+                "name": "Toyota Camry-Gen6"
+            },
+            {
+                "id": 38,
+                "name": "Volkswagen Jetta TDI Cup"
+            },
+            {
+                "id": 39,
+                "name": "Williams-Toyota FW31"
+            }
+        ]

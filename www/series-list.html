@@ -1,0 +1,28 @@
+<div ng-controller="SeriesListCtrl" xmlns="http://www.w3.org/1999/html">
+
+
+    <a ng-click="importSeries()" class="btn btn-primary">import series</a>
+    <a ng-click="saveSeries()" class="btn btn-primary">save series</a>
+
+    <form name="myForm">
+        <div class="list-group">
+            <li class="list-group-item">
+
+
+                <b>Select series (showing {{ series.length }})</b>
+            </li>
+
+            <li ng-repeat="s in series"
+                class="list-group-item">
+
+                <div ng-show="s.isFavorite==true">
+                    <span class="glyphicon glyphicon-star"></span>
+                </div>
+
+                <a href="#/series/{{ s.id }}">{{s.name}}</a><br>
+
+                finished: {{ countFinishedRaces($index) }}
+            </li>
+        </div>
+    </form>
+</div>

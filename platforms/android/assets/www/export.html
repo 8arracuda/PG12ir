@@ -1,0 +1,21 @@
+<div ng-controller="ExportCtrl">
+
+
+
+    Tracks
+    <p><input name="tracks" type="text" value="{{ tracksString }}"></p>
+
+    Vehicles
+    <p><input name="vehicles" type="text" value="{{ vehiclesString }}"></p>
+
+    Series (export:)
+    <p><input name="tracks_export" type="text" value="{{ seriesString }}"></p>
+
+    Series (import:)
+    <p><input name="tracks_import" type="text" value="{{ seriesStringForImport }}"></p>
+
+    <a ng-click="importSeries()" class="btn btn-primary">import series</a>
+
+    <a ng-click="importSeriesTest()" class="btn btn-primary">import series2</a>
+    </form>
+</div>
